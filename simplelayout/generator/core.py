@@ -24,5 +24,6 @@ def generate_matrix(
     for i in positions:
         row = (i-1)//num * unit_grid
         lin = ((i-1) % (num)) * unit_grid
-        matrix[row:row+unit_grid, lin:lin+unit_grid] = np.ones([unit_grid, unit_grid])
+        matrix[row:row+unit_grid, lin:lin +
+               unit_grid] = np.ones([unit_grid, unit_grid])
     return matrix
