@@ -13,4 +13,5 @@ def get_options():
     parser.add_argument('--outdir', '--o', help="content_of_result", type=str)
     parser.add_argument('--file_name', help="name_of_file", type=str)
     options = parser.parse_args()
+    
     return options
