@@ -19,4 +19,9 @@ def generate_matrix(
     Returns:
         np.ndarray: 布局矩阵
     """
-    raise NotImplementedError  # TODO: 实现布局矩阵的生成
+    board_array = np.zeros((board_grid, board_grid), dtype=np.int)
+    for i in positions:
+        row = int((i-1)/(board_grid/unit_grid))
+        lin = int((i-1)%(board_grid/unit_grid))
+        board_array[row][lin] = 1
+    return board_array
