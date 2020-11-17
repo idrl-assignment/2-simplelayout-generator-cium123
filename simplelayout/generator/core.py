@@ -19,9 +19,10 @@ def generate_matrix(
     Returns:
         np.ndarray: 布局矩阵
     """
-    board_array = np.zeros((board_grid, board_grid), dtype=np.int)
+    matrix = np.zeros((board_grid, board_grid), dtype=np.int)
+    num = board_grid // unit_grid
     for i in positions:
-        row = int((i-1)/(board_grid/unit_grid))
-        lin = int((i-1)%(board_grid/unit_grid))
-        board_array[row][lin] = 1
-    return board_array
+        row = (i-1)//num * unit_grid
+        lin = ((i-1) % (num)) * unit_grid
+        matrix[row:row+unit_grid, lin:lin+unit_grid] = np.ones([unit_grid, unit_grid])
+    return matrix
