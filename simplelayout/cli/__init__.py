@@ -1,1 +1,6 @@
-# TODO: 导入函数 cli_generate.py 的 get_options()
+import cli_generate
+
+
+
+if __name__ == "__main__":
+    cli_generate.get_options()
