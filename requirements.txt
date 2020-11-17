@@ -2,7 +2,3 @@ pytest
 numpy
 matplotlib
 scipy
-package
-sys
-argparse
-pathlib
