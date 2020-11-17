@@ -4,3 +4,5 @@ matplotlib
 scipy
 package
 sys
+argparse
+pathlib
