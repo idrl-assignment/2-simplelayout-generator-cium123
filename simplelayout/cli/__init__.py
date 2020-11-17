@@ -1,5 +1,5 @@
-import cli_generate
+from cli_generate import get_options
 
 
 if __name__ == "__main__":
-    cli_generate.get_options()
+    get_options()
