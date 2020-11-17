@@ -19,7 +19,7 @@ def generate_matrix(
     Returns:
         np.ndarray: 布局矩阵
     """
-    matrix = np.zeros((board_grid, board_grid), dtype=np.int)
+    matrix = np.zeros([board_grid, board_grid])
     num = board_grid // unit_grid
     for i in positions:
         row = (i-1)//num * unit_grid
